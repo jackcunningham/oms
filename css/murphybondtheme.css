@@ -239,7 +239,7 @@ h2 a:hover { text-decoration: underline; }
 
 /* Logo */
 a.navbar-brand {
-	background: url('https://007omh.site/dev/new2021/whitelogo600.png') no-repeat center;
+	background: url('https://omimages.s3-eu-west-1.amazonaws.com/images/whitelogo600.png') no-repeat center;
 	background-size: contain;
 	height: 80%;
 	width: 100%;
