@@ -239,11 +239,30 @@ h2 a:hover { text-decoration: underline; }
 
 /* Logo */
 a.navbar-brand {
-	background: url('https://omimages.s3-eu-west-1.amazonaws.com/images/whitelogo600.png') no-repeat center;
-	background-size: contain;
 	height: 80%;
 	width: 100%;
 	text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a.navbar-brand img {
+  display: inline-block;
+	width: auto;
+  max-height: 58px;
+}
+
+@media (min-width: 768px) {
+	a.navbar-brand {
+    margin-left: 0;
+    justify-content: flex-start;
+  }
+
+  a.navbar-brand img {
+    max-height: 86px;
+  }
+
 }
 
 #h-omlogo img { display: none; }
