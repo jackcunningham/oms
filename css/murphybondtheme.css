@@ -1797,6 +1797,27 @@ ul.MB-Tiles,
 }
 
 
+.MB-Product-slider .slick-next { right: 21px; }
+.MB-Product-slider .slick-prev { left: 0; z-index: 10; }
+
+.MB-Product-slider .slick-next:before,
+.MB-Product-slider .slick-prev:before {
+    content: '›';
+    display: block;
+    width: 42px;
+    height: 84px;
+    line-height: 84px;
+    background: rgba(0, 0, 0, 0.03);
+	color: #000;
+	font-weight: bold;
+	font-size: 21px;
+}
+
+.MB-Product-slider .slick-prev:before {
+	content: '‹';
+}
+
+
 
 /*
 // Utility classes
