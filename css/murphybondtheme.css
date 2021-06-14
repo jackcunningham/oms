@@ -1098,7 +1098,7 @@ ul.cart-contents .btn-primary {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-end;
-	background: #f8f8f8;
+	background: #fff;
 	box-sizing: border-box;
   }
   
@@ -1232,7 +1232,7 @@ ul.cart-contents .btn-primary {
   .MB-Minis {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0;
+	margin: 4em 0 0;
 	padding: 0;
 	list-style: none;
   }
@@ -1336,7 +1336,7 @@ ul.cart-contents .btn-primary {
 	display: flex;
 	flex-wrap: nowrap;
 	padding: 0;
-	margin: 0;
+	margin: 4em 0 0;
 	list-style: none; 
   }
   
@@ -1659,7 +1659,7 @@ ul.MB-Tiles,
 .MB-Tiles li {
   box-sizing: border-box;
   padding: 1em 8%;
-  margin: 0 4% 20px;
+  margin: 0 2% 20px;
 }
 
 .MB-Tiles > * {
@@ -1681,7 +1681,7 @@ ul.MB-Tiles,
 
 @media (min-width: 800px) {
   .MB-Tiles > * {
-    flex-basis: 44%;
+    flex-basis: 47%;
     box-sizing: border-box;
   }
   .MB-Tiles li {
