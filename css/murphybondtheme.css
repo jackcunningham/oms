@@ -1167,9 +1167,9 @@ ul.cart-contents .btn-primary {
   
   /* Themes */
   .MB-Hero.MB-Hero--tan { background: #F4F1DE; }
-  .MB-Hero.MB-Hero--yellow:after { background: #FEDC31; }
-  .MB-Hero.MB-Hero--blue:after { background: #1383B0; }
-  .MB-Hero.MB-Hero--purple:after { background: #3A3A70; }
+  .MB-Hero.MB-Hero--yellow { background: #FEDC31; }
+  .MB-Hero.MB-Hero--blue { background: #1383B0; }
+  .MB-Hero.MB-Hero--purple { background: #3A3A70; }
   
   .MB-Hero.MB-Hero--header p {
 	margin-bottom: 3em;
