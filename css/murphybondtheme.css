@@ -1670,7 +1670,10 @@ ul.MB-Tiles,
   width: 100%;
 }
 
-.MB-Tiles a { color: #000; }
+.MB-Tiles a { 
+	color: #000; 
+	text-decoration: none;
+}
 
 @media (max-width: 799px) {
   .MB-Tiles > *:nth-child(odd) {
