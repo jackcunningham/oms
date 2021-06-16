@@ -1098,7 +1098,7 @@ ul.cart-contents .btn-primary {
 	align-items: flex-end;
 	background: #fff;
 	box-sizing: border-box;
-  }
+}
   
   .MB-Hero > * {
 	  box-sizing: border-box;
@@ -1166,7 +1166,7 @@ ul.cart-contents .btn-primary {
   }
   
   /* Themes */
-  .MB-Hero.MB-Hero--tan:after { background: #F4F1DE; }
+  .MB-Hero.MB-Hero--tan { background: #F4F1DE; }
   .MB-Hero.MB-Hero--yellow:after { background: #FEDC31; }
   .MB-Hero.MB-Hero--blue:after { background: #1383B0; }
   .MB-Hero.MB-Hero--purple:after { background: #3A3A70; }
@@ -1669,6 +1669,8 @@ ul.MB-Tiles,
   max-width: 100%;
   width: 100%;
 }
+
+.MB-Tiles a { color: #000; }
 
 @media (max-width: 799px) {
   .MB-Tiles > *:nth-child(odd) {
