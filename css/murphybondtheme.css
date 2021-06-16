@@ -1829,6 +1829,16 @@ ul.MB-Tiles,
 .mbu-vspace {
   margin: 2em 0;
 }
+
+.mbu-flush {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.mbu-space {
+	margin-top: 80px !important;
+}
+
 .mbu-hspace {
   margin: 0 4%;
 }
