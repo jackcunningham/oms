@@ -110,10 +110,81 @@
           <p>At O’Mahony’s we pride ourselves on providing services that meet trhe demands of our customers. Delivery, advice, learning support...</p>
         </div>
       </div>
-      
+
       <h2 class="mbu-font-2 mbu-vspace">Contact us</h2>   
-  
+
       <ul class="MB-Tiles">
+        <li>
+          <p>
+            OUR BRANCHES 
+            Limerick 
+            Ennis
+            University Limerick 
+            Tralee
+          </p>
+
+          <p>
+            Main Office
+            New Content 
+            Telephone:  +353 61 203048
+            Opening Hours: 9 - 5pm Monday to Friday, Saturday 9 - 5.50pm
+          </p>
+
+        </li>
+
+        <li>
+          <form class="MB-Form" id="contact-form">
+
+            <h2>Get in touch with us</h2>
+  
+            <label for="reason" class="mbu-fill">
+              Who would you like to contact?
+              <select name="reason" class="mbu-fill" id="contact-reason">
+                <option disabled selected value>Select an option</option>
+                <option value="reception@omahonys.ie">General Enquiries</option>
+                <option value="websales@omahonys.ie">Online orders</option>
+                <option value="accounts.payable@omahonys.ie">Accounts Department</option>
+                <option value="ennis.branch@omahonys.ie">O'Mahony's Ennis</option>
+                <option value="Tralee.branch@omahonys.ie">O'Mahony's Tralee</option>
+                <option value="University.manager@omahonys.ie">O'Mahony's University of Limerick</option>
+                <option value="Frances.Tracey@omahonys.ie">Library Department</option>
+              </select>
+            </label>
+
+            <div class="mbu-flex mbu-d-vspace">
+              <div class="mbu-w50">
+                <label for="fullname" class="mbu-fill">Name
+                  <input type="text" name="fullname" class="mbu-fill" id="contact-fullname" /></label>
+              </div>
+              <div class="mbu-w50 mbu-d-lspace">
+                 <label for="email" class="mbu-fill">Email
+                   <input type="email" name="email" class="mbu-fill" id="contact-email" /></label>
+              </div>
+            </div>
+
+            <div class="mbu-flex mbu-d-vspace">
+              <div class="mbu-w50">
+                <label for="orderref" class="mbu-fill">Order reference (optional)
+                  <input type="text" name="orderref" class="mbu-fill" /></label>
+              </div>
+              <div class="mbu-w50 mbu-d-lspace">
+                <label for="phone" class="mbu-fill">Phone number (optional)
+                  <input type="text" name="phone" class="mbu-fill" /></label>
+              </div>
+            </div>
+
+            <label for="message" class="mbu-fill">Message
+              <textarea name="message" placeholder="Please tell us how we can help today" class="mbu-fill" id="contact-message"></textarea>
+            </label>
+
+            <!-- Return any server-side errors here -->
+            <p class="contact-ss-error"></p>
+
+            <input type="submit" value="Send message" id="contact-form-submit" class="mbu-display-b" />
+          </form>
+
+        </li>
+      
         <li>
           <h3>Limerick</h3>
           <p>tbc</p>
@@ -205,4 +276,56 @@
       
     </div>
   </div>
+
+
+<!-- JQuery - Don't include in production -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+  function validateEmail(email) {
+    console.log(email);
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
+
+  function validateContactForm(event) {
+
+    event.preventDefault();
+
+    $('#contact-form .contact-error').remove();
+
+    var form = $('#contact-form');
+    var reason = $('#contact-form #contact-reason');
+    var fullname = $('#contact-form #contact-fullname');
+    var email = $('#contact-form #contact-email');
+    var message = $('#contact-form #contact-message');
+    var submit = $('#contact-form #contact-form-submit');
+
+    if(!reason.val()) {
+      reason.after('<p class="contact-error">Please tell us who you’re contacting</p>');
+    }
+
+    if(!fullname.val()) {
+      fullname.after('<p class="contact-error">You’re name is required</p>');
+    }
+
+    if(!email.val()) {
+      email.after('<p class="contact-error">You’re email address is required</p>');
+    } else if (!validateEmail(email.val())) {
+      email.after('<p class="contact-error">Please provide a valid email address</p>');
+    }
+
+    if(!message.val()) {
+      message.after('<p class="contact-error">Please tell us how we can help you today</p>');
+    }
+  }
+
+  $('#contact-form-submit').on('click', validateContactForm);
+
+});
+
+</script>
   
