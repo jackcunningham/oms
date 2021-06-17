@@ -1840,6 +1840,7 @@ ul.MB-Tiles,
 	border: 0;
 	outline: none;
 	padding: 0 1em;
+	background-color: #fff;
 }
 
 .MB-Form input,
@@ -1847,6 +1848,12 @@ ul.MB-Tiles,
 	line-height: 42px;
 	margin: 0.25em 0;
 }
+
+.MB-Form input:focus,
+.MB-Form textarea:focus {
+	box-shadow: inset 0 0 0 1px #3688dd, inset 0 0 5px 5px rgba(54, 136, 221, 0.15);
+}
+
 
 .MB-Form select {
 	height: 42px;
