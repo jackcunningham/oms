@@ -2069,3 +2069,7 @@ ul.mbu-list li {
   margin: 1em;
 }
 
+.mbu-scrolloffset {
+  scroll-margin-top: 200px;
+}
+

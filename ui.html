@@ -1197,7 +1197,7 @@
       <p>content here</p>
       <p>content here</p>
 
-      <h3 id="anchor">Anchor heading example</h3>
+      <h3 id="anchor" class="mbu-scrolloffset">Anchor heading example</h3>
       <p>content here</p>
       <p>content here</p>
       <p>content here</p>
@@ -1250,12 +1250,3 @@
 <!-- For demo only, don't include twice -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<script type="text/javascript">
-$(document).ready(function(){
-  if(window.location.hash) {
-    var pos = window.scrollY - 180;
-    var body = $("html, body");
-    body.stop().animate({scrollTop:pos}, 200);
-  } 
-});
-</script> 
