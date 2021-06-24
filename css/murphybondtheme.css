@@ -45,14 +45,14 @@ html, body {
 	}
 	
 	.content {
-	    padding-top: 162px;
+	    padding-top: 175px;
 	}
 	
 }
 
 @media (min-width: 768px) {
 	.content {
-	    padding-top: 181px;
+	    padding-top: 195px;
 	}
 	.navbar-header .navbar-form .input-group .input-group-btn {
 	    width: 1%;
@@ -76,7 +76,7 @@ h1 {
 h2,
 h2 a {
 	font-size: 17px;
-	margin: 4.5em 4% 0.5em;
+	margin: 3em 4% 0.5em;
 	color: #000 !important;
 	text-transform: uppercase;
 	letter-spacing: 0.075em;
@@ -781,8 +781,7 @@ ul.pager button[aria-label="Previous"]{
 
 a.author {
 	text-decoration: underline;
-	text-decoration-style: dotted;
-	color: #234C74;
+	color: #336;
 }
 
 .price {
@@ -806,16 +805,15 @@ label.control-label {
 .crumb li a {
 	background: transparent;
 	display: inline-block;
-	color: #234C74;
+	color: #336;
 	text-decoration: underline;
-	text-decoration-style: dotted;
 	font-size: 14px;
 	padding: 0;
 	float: none;
 }
 
 .crumb li:last-child a {
-    color: #234C74;
+    color: #336;
 }
 
 .crumb li:last-child a:after {
@@ -1964,7 +1962,7 @@ ul.MB-Tiles,
 }
 
 .mbu-gap {
-	margin-top: 80px !important;
+	margin-top: 50px !important;
 }
 
 .mbu-hspace { margin: 0 4%; }
