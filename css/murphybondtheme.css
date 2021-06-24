@@ -425,6 +425,11 @@ a.navbar-brand img {
 		letter-spacing: 0.03em;
 		padding: 10px 1em;
 	}
+
+  .nav.navbar-nav li.dropdown > a:hover {
+    text-decoration: underline;
+  }
+
 	
 	.navbar-default .navbar-nav > .open > a, 
 	.navbar-default .navbar-nav > .open > a:focus, 
@@ -534,6 +539,19 @@ a.navbar-brand img {
 
 .box .buttons { min-height: 55px; }
 
+.box .product-text {
+  height: 75px;
+}
+
+.box .binding {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #000;
+  opacity: 0.4;
+  font-size: 0.8em;
+  margin-bottom: 3px;
+  line-height: 1.4em;
+}
 
 @media (min-width: 320px) and (max-width: 9999px) { /* @media resets */
 	.box { width: 46%; }	
