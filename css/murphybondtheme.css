@@ -25,10 +25,6 @@ html, body {
 	max-width: 1150px;
 }
 
-.col-md-12 > b {
-	margin-left: 4%;
-}
-
 .btn {
 	border-radius: 0;
 }
@@ -1272,7 +1268,7 @@ ul.cart-contents .btn-primary {
 .MB-Minis {
   display: flex;
   flex-wrap: wrap;
-  margin: 90px 0 0;
+  margin: 50px 0 0;
   padding: 0;
   list-style: none;
 }
@@ -1376,7 +1372,7 @@ ul.MB-Media {
   display: flex;
   flex-wrap: nowrap;
   padding: 0;
-  margin: 90px 0 0;
+  margin: 50px 0 0;
   list-style: none; 
 }
 
@@ -1828,7 +1824,7 @@ ul.MB-Tiles,
 
 .MB-Product-slider .box {
 	flex: 0 0 65%;
-	margin: 0 20px;
+	margin: 0 20px 20px;
 }
 
 @media (min-width: 414px) {
