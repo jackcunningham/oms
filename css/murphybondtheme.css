@@ -19,6 +19,10 @@ html, body {
     background-color: #fff;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Page maximum width */
 .container { 
 	width: auto; 
