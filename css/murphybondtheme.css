@@ -2044,6 +2044,11 @@ ul.MB-Tiles,
   .mbu-flex {
     flex-wrap: nowrap;
   }
+
+  .mbu-flex-wrap {
+    flex-wrap: wrap !important;
+  }
+
   .mbu-w10 { flex-basis: 10%; }
   .mbu-w20 { flex-basis: 20%; }
   .mbu-w30 { flex-basis: 30%; }
