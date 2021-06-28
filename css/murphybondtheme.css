@@ -1978,7 +1978,8 @@ ul.MB-Tiles,
 }
 
 .mbu-pad-right { padding-right: 4% !important; }
-
+.mbu-pad-h { padding-left: 2% !important; padding-right: 2% !important; }
+.mbu-pad { padding: 1em 2% !important; }
 
 .mbu-nobr { white-space: nowrap; }
 
