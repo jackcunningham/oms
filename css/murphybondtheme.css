@@ -29,6 +29,8 @@ img {
 	max-width: 1150px;
 }
 
+
+
 .btn {
 	border-radius: 0;
 }
@@ -1007,7 +1009,8 @@ ul.cart-contents .btn-primary {
 }
 
 .cart-button-container .btn.btn-primary,
-.cart-button-container .btn[name="updateCart"] {
+.cart-button-container .btn[name="updateCart"],
+.cart-button-container .btn.btn-info {
 	margin: 0 0.25em 0.5em;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
@@ -1062,12 +1065,6 @@ ul.cart-contents .btn-primary {
   line-height: 1.9em;
 }
 
-
-
-
-
-
-
 .row.cart-item .btn.btn-info.btn-xs i.fa.fa-heart {
   display: none;
 }
@@ -1077,6 +1074,44 @@ ul.cart-contents .btn-primary {
 
 /* basket subtotals */
 .cart .table-condensed tr td { padding: 8px 3px; }
+
+
+/* Wishlist page */
+
+.wishlist-lists > li {
+	border: 1px solid #A0DBF1;
+	background-color: #F4FCFF;
+	border-radius: 8px;
+}
+
+.wishlist-lists li li {
+	background: none;
+}
+
+.cart-header .list-desc {
+	background: none;
+	border: none;
+}
+
+.cart-header .list-desc .but {
+	display: inline-block;
+	position: static;
+	top: auto;
+	right: auto;
+}
+
+.cart-header .list-desc h1 {
+	display: inline-block;
+	padding-right: 0;
+}
+
+.cart-item .col-xs-3 .col-xs-3 {
+  width: auto;
+}
+
+
+
+
 
 
 
@@ -1657,7 +1692,7 @@ ul.MB-Media {
 }
 
 .MB-Footer-content {
-  max-width: 1150px;
+  max-width: calc(900px + 20vw)!important;
   padding: 0 15px;
   box-sizing: border-box;
   margin: 0 auto;
