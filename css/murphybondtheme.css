@@ -29,7 +29,10 @@ img {
 	max-width: 1150px;
 }
 
-
+#page-wrapper.row.content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 .btn {
 	border-radius: 0;
@@ -1059,7 +1062,7 @@ ul.cart-contents .btn-primary {
 
 /* Wishlist */
 .row.cart-item .btn.btn-info.btn-xs {
-  background: #A0DBF1;
+  background: #5bc0de; /*#A0DBF1;*/
   color: #FFF;
   border: 0;
   line-height: 1.9em;
