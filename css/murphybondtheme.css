@@ -33,6 +33,12 @@ img {
 	border-radius: 0;
 }
 
+.btn.btn-primary {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
 .font-smaller {
 	max-height: none;
 }
@@ -985,6 +991,10 @@ ul.cart-contents .btn-primary {
     padding: 0 0.75em;
 }
 
+.cart-button-container {
+  margin-top: 2.5em;
+}
+
 .cart-button-container .btn.btn-primary,
 .cart-button-container .btn[name="updateCart"] {
 	margin: 0 0.25em 0.5em;
@@ -1015,7 +1025,6 @@ ul.cart-contents .btn-primary {
 
 /* Continue button hide */
 .cart-button-container .btn-default.btn.btn-grey { display: none; }
-
 
 .cart .col-xs-6.col-xs-offset-6 {
 	width: auto;
