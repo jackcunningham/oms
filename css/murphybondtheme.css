@@ -1060,16 +1060,14 @@ ul.cart-contents .btn-primary {
 /* Wishlist */
 .row.cart-item .btn.btn-info.btn-xs {
   background: #A0DBF1;
-  color: #000;
+  color: #FFF;
   border: 0;
   line-height: 1.9em;
 }
 
-.row.cart-item .btn.btn-info.btn-xs i.fa {
-  font-family: 'FontAwesome';
+ul.wishlist-lists {
+  padding-left: 0;
 }
-
-
 
 
 /* basket subtotals */
