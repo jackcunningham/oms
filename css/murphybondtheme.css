@@ -711,7 +711,7 @@ ul.pager button[aria-label="Previous"]{
 // Product page
 */
 
-.mb-pdp-details-wrapper {
+.product-details {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
@@ -719,10 +719,10 @@ ul.pager button[aria-label="Previous"]{
 	padding: 0 4%;
 }
 
-.mb-pdp-details-wrapper > h1,
-.mb-pdp-details-wrapper > p,
-.mb-pdp-img,
-.mb-pdp-details {
+.product-details > h1,
+.product-details > p,
+.product-details-image,
+.product-details-summary {
 	box-sizing: border-box;
 	display: block;
 	order: 1;
@@ -733,47 +733,47 @@ ul.pager button[aria-label="Previous"]{
 	padding: 0;
 }
 
-.mb-pdp-details-wrapper > h1 { order: 1; }
-.mb-pdp-details-wrapper > p { order: 2; }
-.mb-pdp-img { order: 3; }
-.mb-pdp-details { order: 4; }
+.product-details > h1 { order: 1; }
+.product-details > p { order: 2; }
+.product-details-image { order: 3; }
+.product-details-summary { order: 4; }
 
-.mb-pdp-details-wrapper > h1 {
+.product-details > h1 {
 	font-size: 24px;
 	margin: 1em 0 0.25em;
 }
 
-.mb-pdp-img {
+.product-details-image {
 	margin-top: 2em;
 }
 
-.mb-pdp-img img {
+.product-details-image img {
 	max-width: 100%;
 	border: none;
 }
 
-.mb-pdp-details {
+.product-details-summary {
 	padding-top: 1em;
 }
 
 @media (min-width: 768px) {
 	
-	.mb-pdp-details-wrapper > h1 {
+	.product-details > h1 {
 		font-size: 32px;
 	}
 	
-	.mb-pdp-details-wrapper > h1,
-	.mb-pdp-details-wrapper > p {
+	.product-details > h1,
+	.product-details > p {
 		box-sizing: border-box;
 		padding-left: 41%;
 	}
 	
-	.mb-pdp-details {
+	.product-details-summary {
 		flex-basis: 62%;
 		padding: 0 3%;
 	}
 	
-	.mb-pdp-img {
+	.product-details-image {
 		flex-basis: 38%;
 		transform: none;
 	}
@@ -1007,6 +1007,21 @@ ul.cart-contents .btn-primary {
 	width: auto;
 	margin-left: 0;
 }
+
+.cart-header { border-bottom: 1px #ddd solid; }
+.cart-item { border-bottom: 1px #ddd solid; }
+.cart-item:last-child { border-bottom: none; }
+
+/* basket subtotals */
+.cart .table-condensed>tbody>tr>td, 
+.cart .table-condensed>tbody>tr>th, 
+.cart .table-condensed>tfoot>tr>td, 
+.cart .table-condensed>tfoot>tr>th, 
+.cart .table-condensed>thead>tr>td, 
+.cart .table-condensed>thead>tr>th {
+  padding: 8px 3px;
+}
+
 
 
 /*
