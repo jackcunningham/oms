@@ -1076,6 +1076,31 @@ ul.wishlist-lists {
 /* basket subtotals */
 .cart .table-condensed tr td { padding: 8px 3px; }
 
+/* List view */
+.cart .view-brief .cart-item .product-details,
+.cart .view-brief .cart-item .product-details .title,
+.cart .view-brief .cart-item .product-details .author,
+.cart .view-brief .cart-item .product-details .format,
+.cart .view-brief .cart-item .product-details .price,
+.cart .view-brief .cart-item .product-details .availability {
+	display: inline;
+	font-size: 14px;
+	margin: 0 4px 0 0;
+	padding: 0;
+}
+
+.cart .view-brief .cart-item .product-details {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+
+
+
 
 /* Wishlist page */
 
