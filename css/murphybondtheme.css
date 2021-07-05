@@ -689,7 +689,8 @@ ul.pager button[aria-label="Previous"]{
 	opacity: 0.5;
 }
 
-.price-sticker {
+.price-sticker,
+.cart .price-sticker {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -714,7 +715,8 @@ ul.pager button[aria-label="Previous"]{
   white-space: normal;
 }
 @media (min-width: 800px) {
-  .price-sticker {
+  .price-sticker,
+  .cart .price-sticker {
     right: 6%;
     left: auto;
     top: 1.1em; 
