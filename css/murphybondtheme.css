@@ -1003,6 +1003,16 @@ ul.cart-contents .btn-primary {
 	color: #000;
 }
 
+.cart-button-container .btn.btn-default,
+.cart-button-container .btn.btn-default:hover,
+.cart-button-container .btn.btn-default:active,
+.cart-button-container .btn.btn-default:focus {
+  border: none;
+  background: none;
+  text-decoration: none;
+  color: #333366;
+}
+
 .cart .col-xs-6.col-xs-offset-6 {
 	width: auto;
 	margin-left: 0;
