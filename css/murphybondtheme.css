@@ -1641,7 +1641,10 @@ ul.MB-Media {
 /*
 // Footer
 */
-#footer { background: transparent; }
+#footer { 
+  background: transparent;
+  margin-top: 50px; 
+}
 
 .MB-Footer-strip {
   background: #333366;
