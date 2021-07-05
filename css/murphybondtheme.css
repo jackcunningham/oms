@@ -1058,7 +1058,15 @@ ul.cart-contents .btn-primary {
 .row.cart-item .btn.btn-info.btn-xs {
   background: #A0DBF1;
   color: #000;
+  border: 0;
+  line-height: 1.9em;
 }
+
+
+
+
+
+
 
 .row.cart-item .btn.btn-info.btn-xs i.fa.fa-heart {
   display: none;
