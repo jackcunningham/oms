@@ -1023,8 +1023,12 @@ ul.cart-contents .btn-primary {
   color: #333366;
 }
 
-/* Continue button hide */
-.cart-button-container .btn-default.btn.btn-grey { display: none; }
+/* Hide basket page elements */
+.cart-button-container .btn-default.btn.btn-grey,
+.payment-types.row,
+.cart hr { 
+  display: none; 
+}
 
 .cart .col-xs-6.col-xs-offset-6 {
 	width: auto;
