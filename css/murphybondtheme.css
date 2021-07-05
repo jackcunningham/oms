@@ -1009,9 +1009,13 @@ ul.cart-contents .btn-primary {
 .cart-button-container .btn.btn-default:focus {
   border: none;
   background: none;
-  text-decoration: none;
+  text-decoration: underline;
   color: #333366;
 }
+
+/* Continue button hide */
+.cart-button-container .btn-default.btn.btn-grey { display: none; }
+
 
 .cart .col-xs-6.col-xs-offset-6 {
 	width: auto;
