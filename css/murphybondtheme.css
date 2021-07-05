@@ -1012,7 +1012,7 @@ ul.cart-contents .btn-primary {
 .cart-item { border-bottom: 1px #ddd solid; }
 
 .cart .table tfoot tr:first-child td {
-  padding: 0;
+  padding: 0 3px 8px;
   border-top: none;
 }
 
