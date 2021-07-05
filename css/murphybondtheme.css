@@ -1010,17 +1010,17 @@ ul.cart-contents .btn-primary {
 
 .cart-header { border-bottom: 1px #ddd solid; }
 .cart-item { border-bottom: 1px #ddd solid; }
-.cart-item:last-child { border-bottom: none; }
+
+.cart .table tfoot tr:first-child td {
+  padding: 0;
+  border-top: none;
+}
+
+
+
 
 /* basket subtotals */
-.cart .table-condensed>tbody>tr>td, 
-.cart .table-condensed>tbody>tr>th, 
-.cart .table-condensed>tfoot>tr>td, 
-.cart .table-condensed>tfoot>tr>th, 
-.cart .table-condensed>thead>tr>td, 
-.cart .table-condensed>thead>tr>th {
-  padding: 8px 3px;
-}
+.cart .table-condensed tr td { padding: 8px 3px; }
 
 
 
