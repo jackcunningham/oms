@@ -1155,6 +1155,12 @@ ul.cart-contents .btn-primary {
 	}	
 }
 
+#button-add-book-token.btn.btn-primary {
+  border-radius: 4px;
+  background: #2C357E;
+  line-height: 2em;
+}
+
 
 /*
 // Banner system
