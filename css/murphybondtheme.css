@@ -51,22 +51,22 @@ img {
 /* Search Typeahead */
 
 .ui-state-active {
-	border-color: #d5d5d5;
-	color: #336;
-	background: #fff;
+	border-color: #d5d5d5 !important;
+	color: #336 !important;
+	background: #fff !important;
 }
 
 .ui-menu .ui-menu-item > div {
-	line-height: 42px;
-	padding: 0 1em;
+	line-height: 42px !important;
+	padding: 0 1em !important;
 }
 
 .ui-widget {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 .ui-widget {
-	background: #f8f8f8;
+	background: #f8f8f8 !important;
 }
 
 
