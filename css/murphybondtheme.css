@@ -48,6 +48,28 @@ img {
 	max-height: none;
 }
 
+/* Search Typeahead */
+
+.ui-state-active {
+	border-color: #d5d5d5;
+	color: #336;
+	background: #fff;
+}
+
+.ui-menu .ui-menu-item > div {
+	line-height: 42px;
+	padding: 0 1em;
+}
+
+.ui-widget {
+    font-family: 'Roboto', sans-serif;
+}
+
+.ui-widget {
+	background: #f8f8f8;
+}
+
+
 @media (min-width: 320px) and (max-width: 9999px) { /* @media resets */
 
 	.container { 
