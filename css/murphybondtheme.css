@@ -796,6 +796,16 @@ ul.pager button[aria-label="Previous"]{
 	border: none;
 }
 
+.product-details-image .img-shrinkwrap {
+  display: inline-block;
+  position: relative;
+}
+
+.product-details-image .img-shrinkwrap .price-sticker {
+  right: -30px;
+  top: 2em;
+}
+
 .product-details-summary {
 	padding-top: 1em;
 }
