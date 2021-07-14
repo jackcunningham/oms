@@ -2045,10 +2045,13 @@ ul.MB-Tiles,
 .slick-prev { left: 0 !important; z-index: 10;}
 
 .MB-Product-slider .slick-next,
-.MB-Product-slider .slick-prev,
+.MB-Product-slider .slick-prev {
+  width: 42px;
+}
+
 .MB-Carousel .slick-next,
 .MB-Carousel .slick-prev {
-  width: 42px;
+  display: none;
 }
 
 .MB-Product-slider .slick-next:before,
