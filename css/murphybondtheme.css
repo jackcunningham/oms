@@ -2040,6 +2040,8 @@ ul.MB-Tiles,
 	max-height: 92%;
 }
 
+.slick-next { right: 0 !important; }
+.slick-prev { left: 0 !important; }
 
 .MB-Product-slider .slick-next { right: 0 !important; }
 .MB-Product-slider .slick-prev { left: 0 !important; z-index: 10; }
