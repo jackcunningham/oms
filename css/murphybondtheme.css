@@ -819,6 +819,10 @@ ul.pager button[aria-label="Previous"]{
 	padding-top: 1em;
 }
 
+.product-details-summary .btn-info {
+  height: 42px;
+}
+
 @media (min-width: 768px) {
 	
 	.product-details > h1 {
