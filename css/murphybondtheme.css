@@ -1281,6 +1281,7 @@ ul.wishlist-lists {
   padding: 0 4%;
   flex: 0 0 100%;
   max-width: 100%;
+  min-height: 180px;
   text-align: center;
 }
 
@@ -2044,8 +2045,7 @@ ul.MB-Tiles,
 .slick-next { right: 0 !important; }
 .slick-prev { left: 0 !important; z-index: 10;}
 
-.MB-Product-slider button.slick-next,
-.MB-Product-slider button.slick-prev {
+.slick-arrow {
   width: 42px !important;
 }
 
