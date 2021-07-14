@@ -48,6 +48,15 @@ img {
 	max-height: none;
 }
 
+
+/* Bootstrap resets */
+
+a:focus {
+  outline: none;
+}
+
+
+
 /* Search Typeahead */
 
 .ui-state-active {
