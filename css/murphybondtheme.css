@@ -1400,14 +1400,17 @@ ul.wishlist-lists {
 @media (min-width: 640px) {
 
   .MB-Hero .MB-Hero-summary {
-    flex-basis: 38%;
+    flex: 1 1 38%;
     max-width: 38%;
+    min-width: 405px;
+    min-height: 175px;
+    overflow-y: hidden;
     text-align: left;
     order: 1;
   }
 
   .MB-Hero .MB-Hero-image {
-    flex-basis: 62%;
+    flex: 1 1 auto;
     max-width: 62%;
     order: 2;
   }
@@ -1645,14 +1648,22 @@ ul.MB-Media {
 }
 
 .MB-Carousel .slick-dots {
-  transform: translateY(-40px);
+  line-height: 56px;
+  transform: translateY(-28px);
 }
 
 .MB-Carousel .slick-dots button:before {
   font-size: 9px;
   opacity: 1;
-  color: #f2f2f2;
+  color: rgba(0, 0, 0, 0.4);
 }
+
+.slick-dots li.slick-active button:before {
+   color: #fff !important; 
+   opacity: 1 !important;
+}
+
+
 
 
 
@@ -2030,8 +2041,8 @@ ul.MB-Tiles,
 }
 
 
-.MB-Product-slider .slick-next { right: 21px; }
-.MB-Product-slider .slick-prev { left: 0; z-index: 10; }
+.MB-Product-slider .slick-next { right: 0 !important; }
+.MB-Product-slider .slick-prev { left: 0 !important; z-index: 10; }
 
 .MB-Product-slider .slick-next:before,
 .MB-Product-slider .slick-prev:before {
