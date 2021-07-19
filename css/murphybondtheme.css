@@ -1661,6 +1661,36 @@ ul.MB-Media {
   }
 }
 
+
+
+.MB-Carousel {
+  padding-bottom: 104%;
+  overflow-y: hidden;
+  height: 0;
+}
+
+.MB-Carousel > * {
+  /* visibility: hidden; */
+  opacity: 0;
+  transition: opacity ease 1s;
+}
+
+.MB-Carousel.slick-initialized {
+  padding-bottom: 0;
+  height: auto;
+}
+
+.MB-Carousel.slick-initialized > * {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (min-width: 414px) {.MB-Carousel { padding-bottom: 97%; }}
+@media (min-width: 640px) {.MB-Carousel { padding-bottom: 25%; }}
+
+
+
+
 .MB-Carousel .slick-dots {
   line-height: 56px;
   transform: translateY(-28px);
