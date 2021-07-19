@@ -274,6 +274,11 @@ h2 a:hover { text-decoration: underline; }
 	font-size: 14px;
 }
 
+#h-cart li a, 
+.navbar-default .navbar-nav>li>a {
+  color: #333366;
+} 
+
 .yamm-content h3 {
 	margin-top: 2em;
     color: #000;
