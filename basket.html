@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+
+<title>PDP Template</title>
+
+<meta name="viewport" content="width=device-width">
+
+<link rel="stylesheet" href="https://www.omahonys.ie/css/omcom.min.css">
+<link rel="stylesheet" href="https://www.omahonys.ie/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/murphybondtheme.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+
+<div id="wrapper" class="container">
+    <div id="page-wrapper" class="row content">
+        <!--page starts-->
+
+
+        <div class="cart">
+            <form name="cart" id="cart" action="https://iar.omahonys.ie/r_cart.php" method="post">
+            
+              <div class="view-brief">
+              <div class="row cart-header">
+                <div class="col-xs-6">
+                  <h1>Your Cart</h1><p>You have 3 unique items in your cart</p>
+                  <input type="hidden" id="list_id" value="0">
+                </div>
+                <div class="col-xs-6 cart-button-container">
+                  <button type="button" class="btn btn-default" onclick="return toggle_cart_view()">Show Full View</button>
+                  
+                  
+                  <button type="submit" class="btn btn-warning" name="updateCart" form="cart">Update Cart</button>
+              <a href="https://iar.omahonys.ie/r_checkout.php" class="btn btn-primary" onclick="javascript:return check_if_changed()">Checkout</a>
+                </div>
+              </div>
+              
+              
+            <div class="row cart-item">
+        
+              <div class="col-xs-8 col-sm-8 product-details">
+              
+                  <div class="title">
+                    <a href="https://iar.omahonys.ie/r_prod_info.php?p=10493702">The Ministry of Bodies</a>
+                  </div>
+                  <a class="author" href="https://iar.omahonys.ie/r_search_results.php?k=Seamus+O%27Mahony&amp;f=a">Seamus O'Mahony</a>
+                  <span class="format">Trade Paperback</span>
+                  <span class="price">
+                  <span style="white-space:nowrap">€ 14.99</span> <span class="price_save">Save €3.29 (RRP €18.28)</span>
+                  </span>
+                  <span class="availibility available">In Stock.     <b>Usually despatched in 2-5 working days.</b></span>
+               
+              </div>
+              
+              <div class="col-xs-1 col-sm-1">
+                <p class="bk-sub-total ar"><span style="white-space:nowrap">€ 14.99</span></p>
+              </div>
+              
+              <div class="col-xs-1 col-sm-1">
+              
+                  <input type="hidden" name="list_id" value="0">
+                  <input type="hidden" name="pid_10493702" value="10493702">
+                  <input type="hidden" name="orig_qty_10493702" value="1">
+                  <input type="text" name="qty_10493702" class="form-control" value="1" maxlength="3" onchange="javascript:update_reminder()">
+                  
+              </div>
+              
+              <div class="col-xs-2 col-sm-2">
+                <button type="button" class="btn btn-danger btn-xs" onclick="javascript:click_delete_from_cart(this)" data-pid="10493702">Delete</button>
+                <a href="r_login.php?a=li&amp;r=wlc" class="btn btn-info btn-xs"><i class="fa fa-heart"></i> Wishlist</a>
+              </div>
+              
+            </div>
+            
+            <div class="row cart-item">
+        
+              <div class="col-xs-8 col-sm-8 product-details">
+              
+                  <div class="title">
+                    <a href="https://iar.omahonys.ie/r_prod_info.php?p=10450517">The Boy, The Mole, The Fox and The Horse</a>
+                  </div>
+                  <a class="author" href="https://iar.omahonys.ie/r_search_results.php?k=Charlie+Mackesy&amp;f=a">Charlie Mackesy</a>
+                  <span class="format">Hardback</span>
+                  <span class="price">
+                  <span style="white-space:nowrap">€ 19.99</span> <span class="price_save">Save €0.73 (RRP €20.72)</span>
+                  </span>
+                  <span class="availibility available">In Stock.     <b>Usually despatched in 2-5 working days.</b></span>
+               
+              </div>
+              
+              <div class="col-xs-1 col-sm-1">
+                <p class="bk-sub-total ar"><span style="white-space:nowrap">€ 19.99</span></p>
+              </div>
+              
+              <div class="col-xs-1 col-sm-1">
+              
+                  <input type="hidden" name="list_id" value="0">
+                  <input type="hidden" name="pid_10450517" value="10450517">
+                  <input type="hidden" name="orig_qty_10450517" value="1">
+                  <input type="text" name="qty_10450517" class="form-control" value="1" maxlength="3" onchange="javascript:update_reminder()">
+                  
+              </div>
+              
+              <div class="col-xs-2 col-sm-2">
+                <button type="button" class="btn btn-danger btn-xs" onclick="javascript:click_delete_from_cart(this)" data-pid="10450517">Delete</button>
+                <a href="r_login.php?a=li&amp;r=wlc" class="btn btn-info btn-xs"><i class="fa fa-heart"></i> Wishlist</a>
+              </div>
+              
+            </div>
+            
+            <div class="row cart-item">
+        
+              <div class="col-xs-8 col-sm-8 product-details">
+              
+                  <div class="title">
+                    <a href="https://iar.omahonys.ie/r_prod_info.php?p=10394037">The Truth Behind The Irish Famine</a>
+                  </div>
+                  <a class="author" href="https://iar.omahonys.ie/r_search_results.php?k=Jerry+Mulvihill&amp;f=a">Jerry Mulvihill</a>
+                  <span class="format">Hardback</span>
+                  <span class="price">
+                  <span style="white-space:nowrap">€ 30.00</span> 
+                  </span>
+                  <span class="availibility available">In Stock.     <b>Usually despatched in 2-5 working days.</b></span>
+               
+              </div>
+              
+              <div class="col-xs-1 col-sm-1">
+                <p class="bk-sub-total ar"><span style="white-space:nowrap">€ 30.00</span></p>
+              </div>
+              
+              <div class="col-xs-1 col-sm-1">
+              
+                  <input type="hidden" name="list_id" value="0">
+                  <input type="hidden" name="pid_10394037" value="10394037">
+                  <input type="hidden" name="orig_qty_10394037" value="1">
+                  <input type="text" name="qty_10394037" class="form-control" value="1" maxlength="3" onchange="javascript:update_reminder()">
+                  
+              </div>
+              
+              <div class="col-xs-2 col-sm-2">
+                <button type="button" class="btn btn-danger btn-xs" onclick="javascript:click_delete_from_cart(this)" data-pid="10394037">Delete</button>
+                <a href="r_login.php?a=li&amp;r=wlc" class="btn btn-info btn-xs"><i class="fa fa-heart"></i> Wishlist</a>
+              </div>
+              
+            </div>
+            
+              
+              <div class="row">
+              
+                <div class="col-xs-6 col-xs-offset-6">
+                <table class="table table-condensed text-right">
+                
+                  
+                  <tfoot>
+                    
+                    <tr>
+                      <td colspan="3" class="ar"><strong>Sub-total</strong></td>
+                      <td class="text-right"><span id="subtotal-val"><span style="white-space:nowrap">€ 64.98</span></span></td>
+                    </tr>
+                    <tr>
+                      <td colspan="3" class="ar"><strong>Delivery</strong></td>
+                      <td class="text-right"><span id="delivery-price-container">(on checkout)</span></td>
+                    </tr>
+                    <tr>
+                      <td colspan="3" class="ar"><strong>Total Due</strong></td>
+                      <td class="text-right"><span id="total-price-container"><span style="white-space:nowrap">€ 64.98</span></span></td>
+                    </tr>
+                    <tr>
+                    <input type="hidden" id="total_ex_shipping" value="64.98">
+                    </tr>
+                  </tfoot>
+                 </table>
+                 <script>
+                  var total_due = 64.98;
+                 </script>
+                 
+                
+                
+                
+                  <div class="col-sm-7 col-sm-offset-5" style="margin-top:5px;margin-bottom:20px;background-color:#eee">
+                    <label class="control-label" for="input-coupon">Enter your coupon here</label>
+                    <div class="input-group">
+                      <input type="text" name="input-coupon" placeholder="Coupon Code" id="input-coupon" class="form-control" value="">
+                      <span class="input-group-btn">
+                      <input type="button" value="Apply Coupon" id="button-coupon" class="btn btn-primary">
+                      </span>
+                    </div>
+                  </div>
+               
+              <hr>
+              
+              <div class="row">
+              
+                <div class="col-sm-12 cart-button-container">
+                  <button type="button" class="btn btn-default" onclick="return toggle_cart_view()">Show Full View</button>
+                  
+                  <a href="https://iar.omahonys.ie/r_index.php" class="btn-default btn btn-grey">Continue shopping</a>
+                  
+                  <button type="submit" class="btn btn-warning" name="updateCart" form="cart">Update Cart</button>
+              <a href="https://iar.omahonys.ie/r_checkout.php" class="btn btn-primary" onclick="javascript:return check_if_changed()">Checkout</a>
+                </div>
+              </div>
+              
+              <hr>
+                <div class="row">
+                
+                  <div class="xcol-sm-9">
+                    <div class="payment-types row">
+                        <img src="images/payment/ppcom.svg" alt="Paypal" class="img-responsive">
+                        <img src="images/payment/visa.gif" alt="Visa" class="img-responsive">
+                        <img src="images/payment/mastercard.gif" alt="Mastercard" class="img-responsive">
+                        <img src="images/payment/visad.gif" alt="Visa Debit" class="img-responsive">
+                        <img src="images/payment/maestro.gif" alt="Maestro" class="img-responsive">
+                    </div>
+                  </div>
+                  
+                </div>
+              
+            </div>
+          </div>
+              
+          </div></form>
+        </div>
+
+        <div class="cart">
+            <form name="cart" id="cart" action="https://iar.omahonys.ie/r_cart.php" method="post">
+            
+              <div class="view-brief">
+              <div class="row cart-header">
+                <div class="col-xs-6">
+                  <h1>Your Cart</h1><p>You have 3 unique items in your cart</p>
+                  <input type="hidden" id="list_id" value="0">
+                </div>
+                <div class="col-xs-6 cart-button-container">
+                  <button type="button" class="btn btn-default" onclick="return toggle_cart_view()">Show Summary View</button>
+                  
+                  
+                  <button type="submit" class="btn btn-warning" name="updateCart" form="cart">Update Cart</button>
+              <a href="https://iar.omahonys.ie/r_checkout.php" class="btn btn-primary" onclick="javascript:return check_if_changed()">Checkout</a>
+                </div>
+              </div>
+              
+              
+            <div class="row cart-item">
+        
+              <div class="col-xs-3">
+              
+              <div class="col-xs-3">
+                  <a href="https://iar.omahonys.ie/the-ministry-of-bodies-p-10493702.html">
+                    <div class="img_cont">
+                      <img src="https://omimages.s3.eu-west-1.amazonaws.com/covers/9781800244221.jpg" alt="Cover of The Ministry of Bodies" class="img-prod"><span class="price-sticker">18% off</span>
+                    </div>
+                  </a>
+              </div>
+              </div>
+        
+              <div class="col-xs-6 col-sm-7">
+              
+                  <div class="title">
+                    <a href="https://iar.omahonys.ie/the-ministry-of-bodies-p-10493702.html">The Ministry of Bodies</a>
+                  </div>
+                  <p><a class="author" href="https://iar.omahonys.ie/r_search_results.php?k=Seamus+O%27Mahony&amp;f=a">Seamus O'Mahony</a></p>
+                  <p class="format">Trade Paperback</p>
+                  <!-- <p class='RRP'>List price 18.28</p> -->
+                  <p class="price">
+                  <span style="white-space:nowrap">€ 14.99</span> <span class="price_save">Save €3.29 (RRP €18.28)</span>
+                  </p>
+                  <p class="availibility available">In Stock.     <b>Usually despatched in 2-5 working days.</b></p>
+              
+              </div>
+              
+              <div class="col-xs-3 col-sm-2">
+              
+                  <input type="hidden" name="list_id" value="0">
+                  <input type="hidden" name="pid_10493702" value="10493702">
+                  <input type="hidden" name="orig_qty_10493702" value="1">
+                  
+                  <label>Quantity</label>
+                  <input type="text" name="qty_10493702" class="form-control" value="1" maxlength="3" onchange="javascript:update_reminder()">
+                  
+                
+                <p class="bk-sub-total"><span style="white-space:nowrap">€ 14.99</span></p>
+                <button type="button" class="btn btn-danger btn-xs" onclick="javascript:click_delete_from_cart(this)" data-pid="10493702">Delete</button>
+                <a href="r_login.php?a=li&amp;r=wlc" class="btn btn-info btn-xs"><i class="fa fa-heart"></i> Wishlist</a>
+              </div>
+            </div>
+            
+            <div class="row cart-item">
+        
+              <div class="col-xs-3">
+              
+              <div class="col-xs-3">
+                  <a href="https://iar.omahonys.ie/the-boy-the-mole-the-fox-and-the-horse-p-10450517.html">
+                    <div class="img_cont">
+                      <img src="https://omimages.s3.eu-west-1.amazonaws.com/covers/9781529105100.jpg" alt="Cover of The Boy, The Mole, The Fox and The Horse" class="img-prod">
+                    </div>
+                  </a>
+              </div>
+              </div>
+        
+              <div class="col-xs-6 col-sm-7">
+              
+                  <div class="title">
+                    <a href="https://iar.omahonys.ie/the-boy-the-mole-the-fox-and-the-horse-p-10450517.html">The Boy, The Mole, The Fox and The Horse</a>
+                  </div>
+                  <p><a class="author" href="https://iar.omahonys.ie/r_search_results.php?k=Charlie+Mackesy&amp;f=a">Charlie Mackesy</a></p>
+                  <p class="format">Hardback</p>
+                  <!-- <p class='RRP'>List price 20.72</p> -->
+                  <p class="price">
+                  <span style="white-space:nowrap">€ 19.99</span> <span class="price_save">Save €0.73 (RRP €20.72)</span>
+                  </p>
+                  <p class="availibility available">In Stock.     <b>Usually despatched in 2-5 working days.</b></p>
+              
+              </div>
+              
+              <div class="col-xs-3 col-sm-2">
+              
+                  <input type="hidden" name="list_id" value="0">
+                  <input type="hidden" name="pid_10450517" value="10450517">
+                  <input type="hidden" name="orig_qty_10450517" value="1">
+                  
+                  <label>Quantity</label>
+                  <input type="text" name="qty_10450517" class="form-control" value="1" maxlength="3" onchange="javascript:update_reminder()">
+                  
+                
+                <p class="bk-sub-total"><span style="white-space:nowrap">€ 19.99</span></p>
+                <button type="button" class="btn btn-danger btn-xs" onclick="javascript:click_delete_from_cart(this)" data-pid="10450517">Delete</button>
+                <a href="r_login.php?a=li&amp;r=wlc" class="btn btn-info btn-xs"><i class="fa fa-heart"></i> Wishlist</a>
+              </div>
+            </div>
+            
+            <div class="row cart-item">
+        
+              <div class="col-xs-3">
+              
+              <div class="col-xs-3">
+                  <a href="https://iar.omahonys.ie/the-truth-behind-the-irish-famine-p-10394037.html">
+                    <div class="img_cont">
+                      <img src="https://omimages.s3.eu-west-1.amazonaws.com/covers/9780957434752.jpg" alt="Cover of The Truth Behind The Irish Famine" class="img-prod">
+                    </div>
+                  </a>
+              </div>
+              </div>
+        
+              <div class="col-xs-6 col-sm-7">
+              
+                  <div class="title">
+                    <a href="https://iar.omahonys.ie/the-truth-behind-the-irish-famine-p-10394037.html">The Truth Behind The Irish Famine</a>
+                  </div>
+                  <p><a class="author" href="https://iar.omahonys.ie/r_search_results.php?k=Jerry+Mulvihill&amp;f=a">Jerry Mulvihill</a></p>
+                  <p class="format">Hardback</p>
+                  <!-- <p class='RRP'>List price 30.00</p> -->
+                  <p class="price">
+                  <span style="white-space:nowrap">€ 30.00</span> 
+                  </p>
+                  <p class="availibility available">In Stock.     <b>Usually despatched in 2-5 working days.</b></p>
+              
+              </div>
+              
+              <div class="col-xs-3 col-sm-2">
+              
+                  <input type="hidden" name="list_id" value="0">
+                  <input type="hidden" name="pid_10394037" value="10394037">
+                  <input type="hidden" name="orig_qty_10394037" value="1">
+                  
+                  <label>Quantity</label>
+                  <input type="text" name="qty_10394037" class="form-control" value="1" maxlength="3" onchange="javascript:update_reminder()">
+                  
+                
+                <p class="bk-sub-total"><span style="white-space:nowrap">€ 30.00</span></p>
+                <button type="button" class="btn btn-danger btn-xs" onclick="javascript:click_delete_from_cart(this)" data-pid="10394037">Delete</button>
+                <a href="r_login.php?a=li&amp;r=wlc" class="btn btn-info btn-xs"><i class="fa fa-heart"></i> Wishlist</a>
+              </div>
+            </div>
+            
+              
+              <div class="row">
+              
+                <div class="col-xs-6 col-xs-offset-6">
+                <table class="table table-condensed text-right">
+                
+                  
+                  <tfoot>
+                    
+                    <tr>
+                      <td colspan="3" class="ar"><strong>Sub-total</strong></td>
+                      <td class="text-right"><span id="subtotal-val"><span style="white-space:nowrap">€ 64.98</span></span></td>
+                    </tr>
+                    <tr>
+                      <td colspan="3" class="ar"><strong>Delivery</strong></td>
+                      <td class="text-right"><span id="delivery-price-container">(on checkout)</span></td>
+                    </tr>
+                    <tr>
+                      <td colspan="3" class="ar"><strong>Total Due</strong></td>
+                      <td class="text-right"><span id="total-price-container"><span style="white-space:nowrap">€ 64.98</span></span></td>
+                    </tr>
+                    <tr>
+                    <input type="hidden" id="total_ex_shipping" value="64.98">
+                    </tr>
+                  </tfoot>
+                 </table>
+                 <script>
+                  var total_due = 64.98;
+                 </script>
+                 
+                
+                
+                
+                  <div class="col-sm-7 col-sm-offset-5" style="margin-top:5px;margin-bottom:20px;background-color:#eee">
+                    <label class="control-label" for="input-coupon">Enter your coupon here</label>
+                    <div class="input-group">
+                      <input type="text" name="input-coupon" placeholder="Coupon Code" id="input-coupon" class="form-control" value="">
+                      <span class="input-group-btn">
+                      <input type="button" value="Apply Coupon" id="button-coupon" class="btn btn-primary">
+                      </span>
+                    </div>
+                  </div>
+               
+              <hr>
+              
+              <div class="row">
+              
+                <div class="col-sm-12 cart-button-container">
+                  <button type="button" class="btn btn-default" onclick="return toggle_cart_view()">Show Summary View</button>
+                  
+                  <a href="https://iar.omahonys.ie/r_index.php" class="btn-default btn btn-grey">Continue shopping</a>
+                  
+                  <button type="submit" class="btn btn-warning" name="updateCart" form="cart">Update Cart</button>
+              <a href="https://iar.omahonys.ie/r_checkout.php" class="btn btn-primary" onclick="javascript:return check_if_changed()">Checkout</a>
+                </div>
+              </div>
+              
+              <hr>
+                <div class="row">
+                
+                  <div class="xcol-sm-9">
+                    <div class="payment-types row">
+                        <img src="images/payment/ppcom.svg" alt="Paypal" class="img-responsive">
+                        <img src="images/payment/visa.gif" alt="Visa" class="img-responsive">
+                        <img src="images/payment/mastercard.gif" alt="Mastercard" class="img-responsive">
+                        <img src="images/payment/visad.gif" alt="Visa Debit" class="img-responsive">
+                        <img src="images/payment/maestro.gif" alt="Maestro" class="img-responsive">
+                    </div>
+                  </div>
+                  
+                </div>
+              
+            </div>
+          </div>
+              
+          </div></form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--page ends-->
+    </div>
+  </div>

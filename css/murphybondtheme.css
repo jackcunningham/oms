@@ -29,6 +29,10 @@ img {
 	max-width: 1150px;
 }
 
+#page-wrapper {
+  min-height: 100vh;
+}
+
 #page-wrapper.row.content {
   padding-left: 15px;
   padding-right: 15px;
@@ -208,6 +212,10 @@ h2 a:hover { text-decoration: underline; }
   padding: 0 3em 0 1em;
   line-height: 42px;
   margin-bottom: 16px;
+}
+
+.form-control {
+  min-width: 42px;
 }
 
 /* Search button */
@@ -750,12 +758,36 @@ ul.pager button[aria-label="Previous"]{
   white-space: normal;
 }
 
+
+.cart-item .col-xs-1 {
+  min-width: 65px;
+}
+
+.cart-item .title,
+.cart-item .author {
+  white-space: normal;
+}
+
+.cart-item {
+  padding-top: 1em;
+}
+
+
 @media only screen and (max-width: 768px) {
   .cart-item .price-sticker {
     right: auto;
     left: -30px;
     top: -7px;
   }
+}
+
+.cart-item .col-xs-3 > .col-xs-3 {
+  padding: 0;
+  max-width: 100%;
+}
+
+.cart-item .col-xs-3 > .col-xs-3 img {
+  max-width: 120%;
 }
 
 
