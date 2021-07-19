@@ -1736,7 +1736,7 @@ ul.MB-Media {
 .MB-Carousel .slick-dots button:before {
   font-size: 9px;
   opacity: 1;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .slick-dots li.slick-active button:before {
