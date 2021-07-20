@@ -719,7 +719,7 @@ ul.pager button[aria-label="Previous"]{
 .btn.btn-xs.btn-warning,
 .btn.btn-warning {
     font-size: 13px;
-    padding: 0 3em;
+    padding: 0 1.666em;
     line-height: 42px;
     white-space: nowrap;
     border-radius: 0;
