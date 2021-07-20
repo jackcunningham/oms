@@ -733,6 +733,7 @@ ul.pager button[aria-label="Previous"]{
     font-size: 13px;
     padding: 0 1.666em;
     line-height: 42px;
+    min-width: 90px;
     white-space: nowrap;
     border-radius: 0;
     color: #fff;
