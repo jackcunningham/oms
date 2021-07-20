@@ -347,6 +347,18 @@ a.navbar-brand img {
 	text-indent: 0;
 }
 
+/* Advanced options */
+
+#h-catsrch ul,
+.btn-om {
+  background-color: #f8f8f8;
+}
+#h-catsrch .btn.btn-primary {
+  color: #fff !important;
+  background-color: #000 !important;
+  line-height: 42px;
+  padding: 0 1em;
+}
 
 
 /* Desktop header */
